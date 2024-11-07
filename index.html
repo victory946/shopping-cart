@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="code.js" type="module" defer></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-rose-50 flex flex-col">
+    <section class="flex flex-col p-5">
+      <h1 class="text-3xl font-bold text-[#24130e] mb-5">Desserts</h1>
+      <div id="dessert-container" class="grid grid-cols-1 gap-5"></div>
+    </section>
+
+    <section class="flex flex-col items-start justify-center bg-white p-5">
+      <h2 class="text-2xl font-semibold text-[#753c03]">Your Cart</h2>
+      <div class="flex flex-col items-center justify-center w-full h-full">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+        <p class="text-sm text-[#753c03] font-semibold">
+          Your added items will appear here
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
